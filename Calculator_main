@@ -1,0 +1,22 @@
+#include "Calculator.h"
+#include "Calculator_functions.c"
+
+
+int main(void){
+
+    greeting();
+
+    const char *operations[] = {"\nAddition", "Subtraction", "Division", "Multiplication\n"};
+
+    int x = sizeof(operations)/sizeof(operations[0]);
+
+    for(int i = 0; i < x; i++){
+        printf("%s\n", operations[i]);
+    }
+
+    decision();
+
+    decision_2();
+}
+
+
